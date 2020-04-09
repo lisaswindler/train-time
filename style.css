@@ -1,0 +1,50 @@
+body {
+    background-image: url("hogwarts.jpg");
+    background-size: cover;
+}
+
+table {
+    table-layout: fixed ;
+    width: 100% ;
+  }
+  
+td {
+    width: 25% ;
+  }
+
+.panel-body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.panel-heading {
+    background-color: #070e25;
+}
+
+.panel-title {
+    font-family: 'Henny Penny', cursive;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.btn-submit {
+    background-color: #070e25;
+    font-size: 16px;
+}
+
+.display-1 {
+    color: #e6a748;
+    font-family: 'Henny Penny', cursive;
+}
+
+.panel {
+    border: 1px solid #324f7f;
+}
+
+.fa-bolt {
+    font-size: 1.3em;
+}
+
+.fa {
+
+}

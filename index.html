@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Henny+Penny&family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <title>Hogwarts Express Schedule</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"  media="screen" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+  <header>
+    <h1 class="text-center display-1 p-5"><strong><i class="fa fa-bolt"></i> The Hogwarts Express</strong></h1>
+  </header>
+  <div class="row">
+    <div class="col-sm-12 col-md-8">
+      <div class="panel">
+        <div class="panel-heading">
+          <h3 class="panel-title text-white pt-2"><strong><i class="fa fa-hourglass-half pr-3"></i>Platform 9¾ Schedule</strong></h3>
+        </div>
+        <div class="panel-body" id="">
+          <table>
+            <tr class="pb-5 column-text">
+              <th>Destination</th>
+              <th>Frequency</th>
+              <th>Next Arrival</th>
+              <th>Minutes Away</th>
+            </tr>
+            <tr>
+              <td></th>
+              <td></th>
+              <td></th>
+              <td></th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-sm-12 col-md-4">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title text-white pt-2"><strong><i class="fa fa-train pr-3"></i>Add Train</strong></h3>
+            </div>
+            <div class="panel-body">
+
+              <form role="form">
+                <div class="form-group">
+                  <label for="pwd">Destination</label>
+                  <input type="text" class="form-control" id="destination">
+                </div>
+
+                <div class="form-group">
+                  <label for="start-year">First Train Time (hh:mm - military time)</label>
+                  <input type="text" class="form-control" id="start-year">
+                </div>
+
+                <div class="form-group">
+                  <label for="end-year">Frequency (minutes):</label>
+                  <input type="text" class="form-control" id="end-year">
+                </div>
+
+                <div class="text-center">
+                <button type="submit" class="btn btn-submit text-white pr-5 pl-5 mt-3 mb-2" id="search">Submit</button>
+              </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <script src="train.js"></script>
+  
+</body>
+
+</html>
