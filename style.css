@@ -1,6 +1,9 @@
 body {
     background-image: url("hogwarts.jpg");
     background-size: cover;
+    background-position-x: center;
+    background-position-y: 20%;
+    background-attachment: fixed;
 }
 
 table {
@@ -43,8 +46,4 @@ td {
 
 .fa-bolt {
     font-size: 1.3em;
-}
-
-.fa {
-
 }
